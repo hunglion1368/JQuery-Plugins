@@ -1,0 +1,85 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>Coder Khùng - Hướng dẫn sử dụng Fullpage Menu JQuery plugin</title>
+		
+		<link href="coderkhung.css" rel="stylesheet" type="text/css">
+		
+		<!-- highlight code -->
+		<link href="highlight/styles/default.css" rel="stylesheet" >
+		<script src="highlight/highlight.pack.js"></script>
+		
+		<!-- jquery & jquery ui -->
+		<script src="../jquery/jquery-1.11.1.min.js" type="text/javascript" language="javascript"></script>
+		
+		<!-- init highlight code -->
+		<script type="text/javascript" language="javascript">
+			$(function(){
+				$('pre code').each(function(i, e) {hljs.highlightBlock(e)});
+			});
+		</script>
+	</head>
+	<body>
+		<div id="wrap">
+			<h1 class="center">Fullpage Menu JQuery Plugin</h1>
+			<p class="center page-desc">Hướng dẫn cách sử dụng</p>
+		<div class="usage">
+			<strong>Bước 1. Nhúng các tập tin</strong>
+			<pre>
+				<code class="html">
+&lt;!-- font-awesome --&gt;
+&lt;link href="../font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css"&gt;
+
+&lt;!-- jquery & jquery ui --&gt;
+&lt;script src="../jquery/jquery-1.11.1.min.js" type="text/javascript"&gt;&lt;/script&gt;
+&lt;script src="../jquery/jquery-ui-1.10.4.custom.min.js" type="text/javascript"&gt;&lt;/script&gt;
+
+&lt;!-- fp plugin --&gt;
+&lt;script src="../jquery.fpmenu.js" type="text/javascript"&gt;&lt;/script&gt;
+&lt;link href="../jquery.fpmenu.css" rel="stylesheet" type="text/css"&gt;	
+				</code>
+			</pre>
+			<strong>Bước 2. Tạo cấu trúc menu bằng Html</strong>
+			<pre>
+				<code class="html">
+&lt;!--menu: level 1--&gt;
+&lt;ul id="fpmenu"&gt;
+    &lt;li&gt;
+        &lt;a href="http://facebook.com"&gt;
+            &lt;i class="fa fa-facebook fa-3x"&gt;&lt;/i&gt;
+            &lt;span class="fp-title"&gt;Facebook&lt;/span&gt;
+            &lt;span class="fp-desc"&gt;Website mạng xã hội truy cập miễn phí&lt;/span&gt;
+        &lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+        &lt;a href="http://vnexpress.net"&gt;
+            &lt;i class="fa fa-paper-plane fa-3x"&gt;&lt;/i&gt;
+            &lt;span class="fp-title"&gt;Vnexpress&lt;/span&gt;
+        &lt;/a&gt;
+        &lt;!--sub menu: level 2--&gt;
+        &lt;ul&gt;
+            &lt;li&gt;&lt;a href="http://vnexpress.net/tin-tuc/thoi-su"&gt;Thời sự&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="http://vnexpress.net/tin-tuc/goc-nhin"&gt;Góc nhìn&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="http://vnexpress.net/tin-tuc/the-gioi"&gt;Thế giới&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="http://kinhdoanh.vnexpress.net/"&gt;Kinh doanh&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="http://giaitri.vnexpress.net/"&gt;Giải trí&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="http://thethao.vnexpress.net/"&gt;Thể thao&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/li&gt;
+&lt;/ul&gt;
+				</code>
+			</pre>
+			<strong>Bước 3. Viết lệnh khởi tạo</strong>
+			<pre>
+				<code class="js">
+$(function(){
+	$('#fpmenu').fpmenu();	
+});
+				</code>
+			</pre>
+		</div>
+		</div>
+		<p class="foot">Bản quyền © Coder Khùng</p>
+	</body>
+</html>

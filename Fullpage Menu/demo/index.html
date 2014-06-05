@@ -1,0 +1,114 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>Coder Khùng - Fullpage Menu JQuery plugin</title>
+		
+		<link href="coderkhung.css" rel="stylesheet" type="text/css">
+		
+		<!-- font-awesome -->
+		<link href="../font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+		
+		<!-- jquery & jquery ui -->
+		<script src="../jquery/jquery-1.11.1.min.js" type="text/javascript" language="javascript"></script>
+		<script src="../jquery/jquery-ui-1.10.4.custom.min.js" type="text/javascript" language="javascript"></script>
+		
+		<!-- fp plugin -->
+		<script src="../jquery.fpmenu.js" type="text/javascript" language="javascript"></script>
+		<link href="../jquery.fpmenu.css" rel="stylesheet" type="text/css">
+		
+		<!-- init fullpage menu -->
+		<script type="text/javascript" language="javascript">
+			$(function(){
+				$('#fpmenu').fpmenu();	
+			});
+		</script>
+	</head>
+	<body>
+		<!-- menu can place anywhere -->
+		<ul id="fpmenu">
+			<li>
+				<a href="http://facebook.com">
+					<i class="fa fa-facebook fa-3x"></i>
+					<span class="fp-title">Facebook</span>
+					<span class="fp-desc">Website mạng xã hội truy cập miễn phí</span>
+				</a>
+			</li>
+			<li>
+				<a href="http://vnexpress.net">
+					<i class="fa fa-paper-plane fa-3x"></i>
+					<span class="fp-title">Vnexpress</span>
+					<!-- <span class="fp-desc">Tin tức Việt Nam & thế giới về xã hội, kinh doanh, pháp luật, khoa học, công nghệ, sức khoẻ, đời sống, văn ...</span> -->
+				</a>
+				<ul>
+					<li><a href="http://vnexpress.net/tin-tuc/thoi-su">Thời sự</a></li>
+					<li><a href="http://vnexpress.net/tin-tuc/goc-nhin">Góc nhìn</a></li>
+					<li><a href="http://vnexpress.net/tin-tuc/the-gioi">Thế giới</a></li>
+					<li><a href="http://kinhdoanh.vnexpress.net/">Kinh doanh</a></li>
+					<li><a href="http://giaitri.vnexpress.net/">Giải trí</a></li>
+					<li><a href="http://thethao.vnexpress.net/">Thể thao</a></li>
+				</ul>
+			</li>
+			<li>
+				<a href="http://mp3.zing.vn">
+					<i class="fa fa-music fa-3x"></i>
+					<span class="fp-title">Zing Mp3</span>
+					<span class="fp-desc">Website nhạc trực tuyến lớn nhất VN</span>
+				</a>
+			</li>
+			<li>
+				<a href="http://tinhte.vn">
+					<i class="fa fa-mobile fa-3x"></i>
+					<span class="fp-title">Tinh Tế</span>
+					<span class="fp-desc">Chia sẻ thông tin, kinh nghiệm cho người dùng điện thoại, pda, máy tính, máy ảnh và các thiết bị công nghệ.</span>
+				</a>
+			</li>
+			<li>
+				<a href="http://coderkhung.wordpress.com">
+					<i class="fa fa-code fa-3x"></i>
+					<span class="fp-title">Coder Khùng</span>
+					<span class="fp-desc">Blog chia sẻ kĩ thuật và kiến thức lập trình</span>
+				</a>
+			</li>
+			<li>
+				<a href="http://google.com">
+					<i class="fa fa-google fa-3x"></i>
+					<span class="fp-title">Google</span>
+					<span class="fp-desc">Dịch vụ cho phép người truy cập tìm kiếm thông tin trên Internet.</span>
+				</a>
+			</li>
+		</ul>
+		<div id="wrap">
+			<i class="arrow"></i>
+			<h1 class="center">Fullpage Menu JQuery Plugin</h1>
+			<p class="center page-desc">Plugin dùng để biến một menu được khai báo sử dụng các thẻ &lt;ul&gt; và &lt;li&gt; thành dạng fullpage-menu. Nó thích hợp cho các website hiển thị trên các thiết bị di động</p>
+			<div>
+				<div class="cell">
+					<i class="mobile-first"></i>
+					<p><b>Mobile First</b> phù hợp cho hiển thị website trên các thiết bị di động như máy tính bảng, điện thoại</p>
+				</div>
+				<div class="cell">
+					<i class="multi-level"></i>
+					<p><b>Linh Hoạt</b> hiển thị menu có nhiều cấp. Phù hợp nhất với menu có 2 cấp</p>
+				</div>
+				<div class="cell">
+					<i class="awesome-font"></i>
+					<p><b>Awesome Font</b> được tính hợp sẵn, cung cấp tập hợp rất nhiều icon đẹp, chất lượng</p>
+				</div>
+				<div class="cell">
+					<i class="jqui-animation"></i>
+					<p><b>Animation</b> hỗ trợ đầy đủ các hiệu ứng sẵn có của JQuery UI</p>
+				</div>
+				<div class="clear"></div>
+			</div>
+			<br>
+			<div class="usage btns">
+				<a class="btn btn-white" href="http://coderkhung.wordpress.com"><b>Blog Coder Khùng</b></a>
+				<a class="btn" href="usage.html">Hướng dẫn</a>
+				<a class="btn" href="http://github/coderkhung/">Tải về</a>
+			</div>
+			<br>
+		</div>
+		<p class="foot">Bản quyền © Coder Khùng</p>
+	</body>
+</html>
