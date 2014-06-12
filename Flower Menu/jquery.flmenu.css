@@ -1,0 +1,32 @@
+@CHARSET "UTF-8";
+body {
+	font-family: Tahoma, Arial,sans-serif;
+	font-size: 0.85em;
+}
+ul.coderkhung-menu {
+	position: absolute;
+	top: 300px;
+	left: 400px;
+}
+ul.coderkhung-menu,
+ul.coderkhung-menu ul {
+	margin: 0;
+	padding: 0;
+}
+ul.coderkhung-menu li {
+	list-style: none;
+	border-radius:50%;
+	background: #dddddd;
+	text-align: center;
+}
+ul.coderkhung-menu>li {
+	width: 70px;
+	height: 70px;
+	line-height: 70px;
+}
+ul.coderkhung-menu>li li {
+	width: 50px;
+	height: 50px;
+	line-height: 50px;
+	position: absolute;
+}
